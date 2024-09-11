@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+</head>
+<body class="contenedor">
+    <nav class="navbar">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="img/icono/btn-menu.png" alt=""></label>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">HISTORIA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="#">APLICACIONES</a>
+                    <ul class="submenu">
+                        <li><a href="calculadora.html">calculadora</a></li>
+                        <li><a href="ordenar.html">Ordena numeros</a></li>
+                        <li><a href="#">Condicionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="formulario">
+            <br>
+            <h1>CALCULADORA HTML - JS</h1>
+            <table>
+                <tr>
+                    <td colspan="4"><button id="result">0</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('1')">1</button></td>
+                    <td><button onclick="add('2')">2</button></td>
+                    <td><button onclick="add('3')">3</button></td>
+                    <td><button onclick="add('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('4')">4</button></td>
+                    <td><button onclick="add('5')">5</button></td>
+                    <td><button onclick="add('6')">6</button></td>
+                    <td><button onclick="add('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('7')">7</button></td>
+                    <td><button onclick="add('8')">8</button></td>
+                    <td ><button onclick="add('9')">9</button></td>
+                    <td ><button onclick="add('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="add('0')">0</button></td>
+                    <td colspan="3"><button onclick="add('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="AC"><button onclick="add('del()')">AC</button></td>
+                    <td ><button onclick="add('.')">.</button></td>
+                    <td ><button onclick="add('calc()')">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <aside class="sidebar">
+        <div class="face">
+            <iframe src="https://www.facebook.com/plugins/page.php? href=https%3A%2F%2Fwww.facebook.com%2Fctpmercedes&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId style=" style="border:none;overflow:hidden;" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </aside>
+    <footer class="footer">
+        <p>Colegio Tecnico Profecional</p>
+        <p>Mercedes Norte</p>
+        <p>&copy; 2024 </p>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
